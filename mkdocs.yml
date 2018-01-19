@@ -1,3 +1,35 @@
-site_name: 'Docs -- Nerd On Cloud'
-theme: 'material'
-theme_dir: 'mkdocs-material/material'
+# Project information
+site_name: 'Documentation'
+site_description: 'Docs for NOC'
+site_author: 'Nerd On Cloud'
+site_url: 'https://docs.nerdoncloud.com/'
+
+# Repository
+# (SPECIFY FOR PUBLIC EDITABILITY)
+# repo_name: 'squidfunk/mkdocs-material'
+# repo_url: 'https://github.com/squidfunk/mkdocs-material'
+
+# Copyright
+copyright: 'Copyright &copy; 2018 Nerd On Cloud'
+
+# Configuration
+theme:
+  name: 'material'
+  custom_url: '/mkdocs-material/material'
+  language: 'en'
+  palette:
+    primary: 'blue'
+    accent: 'blue'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Customization
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
