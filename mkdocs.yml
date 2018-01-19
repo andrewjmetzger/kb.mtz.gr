@@ -1,3 +1,2 @@
 site_name: Docs -- Nerd On Cloud
-theme:
-  name: 'material'
+theme: material
