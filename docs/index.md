@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Docs Home
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+## Welcome
 
-## Commands
+This site contains documentation that is hopefully relevant to you.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+## Navigation
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+You can use the tabs at the top of the site to select a category. The left sidebar will then show all of the documentation in that category. The right sidebar lets you go to specific sections or important places within each article.
