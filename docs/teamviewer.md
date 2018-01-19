@@ -58,9 +58,9 @@ Always close TeamViewer once your remote support session is finished. This ensur
 
 
 ??? info "Sponsored sessions"
-When the support session ends, you may see messages promoting the paid edition of TeamViewer. These often appear as a **sponsored session** message. TeamViewer shows these messages at random because we can provide remote support at no cost to you.  
+    When the support session ends, you may see messages promoting the paid edition of TeamViewer. These often appear as a **sponsored session** message. TeamViewer shows these messages at random because we can provide remote support at no cost to you.  
 
-  If you see any promotional messages, you can **close** these windows and continue using your computer, with no further action required.
+    If you see any promotional messages, you can **close** these windows and continue using your computer, with no further action required.
 
 
 ## Use TeamViewer for macOS (OS X)
