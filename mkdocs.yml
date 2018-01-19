@@ -1,3 +1,4 @@
 site_name: 'Docs -- Nerd On Cloud'
-theme: 'material'
-theme_url: 'mkdocs-material-master/material'
+theme:
+   name: null
+   custom_dir: 'mkdocs-material/material'
