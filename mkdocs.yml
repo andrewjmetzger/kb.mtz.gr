@@ -1,2 +1,3 @@
-site_name: Docs -- Nerd On Cloud
-theme: material
+site_name: 'Docs -- Nerd On Cloud'
+theme: 'material'
+theme_url: 'mkdocs-material-master/material'
