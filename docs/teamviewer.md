@@ -22,7 +22,7 @@ Prior to beginning your remote support session, you need to download and run Tea
 To download TeamViewer, [click here](http://go.nerdoncloud.com/teamviewer). You can also copy and paste this link into your web browser: [**http://go.nerdoncloud.com/teamviewer**](http://go.nerdoncloud.com/teamviewer).
 
 !!! info
-The next two steps are for Google Chrome only. Different web browsers may ask you to either Save or Run the file. If asked, you should **Save** the file, and then move it to your **Desktop**.
+    The next two steps are for Google Chrome only. Different web browsers may ask you to either Save or Run the file. If asked, you should **Save** the file, and then move it to your **Desktop**.
 
 After the download finishes, locate it in the bar at the bottom of the window. Click the **arrow** to the right of the file name, and then click **Show in folder**.
 
