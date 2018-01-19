@@ -30,7 +30,7 @@ After the download finishes, locate it in the bar at the bottom of the window. C
 
 Move the file out of this folder by dragging and dropping it onto your **Desktop**. Close the folder window If desired.
 
-**right-click** the downloaded file. Click **Run as administrator**.
+On your desktop, **right-click** the downloaded file. Click **Run as administrator**.
 
 ![](/img/teamviewer-win-as-admin.png)
 
