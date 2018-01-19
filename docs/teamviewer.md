@@ -56,7 +56,7 @@ Once the remote support session is over, TeamViewer will automatically return co
 
 Always close TeamViewer once your remote support session is finished. This ensures that no one can access your computer remotely unless TeamViewer is opened again.
 
-!!! note "Sponsored sessions"
+!!! info "Sponsored sessions"
     When the support session ends, you may see messages promoting the paid edition of TeamViewer. These often appear as a **sponsored session** message. TeamViewer shows these messages at random because we can provide remote support at no cost to you.
 
     If you see any promotional messages, you can **close** these windows and continue using your computer, with no further action required.
@@ -78,15 +78,15 @@ After the download finishes, locate it in the bar at the bottom of the window Cl
 
 In the Finder window that appears double-click **TeamViewerQS.dmg** to open it.
 
-![](img/teamviewer-mac-finder-downloads.png)
+![](/img/teamviewer-mac-finder-downloads.png)
 
 Next, double-click the **QuickSupport icon** to open it when prompted.
 
-![](img/teamviewer-mac-dmg-content.png)
+![](/img/teamviewer-mac-dmg-content.png)
 
 If prompted, click **Open** to accept the security warning. Provide an administrator password if necessary.
 
-![](img/teamviewer-mac-security-warning.png)
+![](/img/teamviewer-mac-security-warning.png)
 
 ### Establishing a TeamViewer Session
 
@@ -94,7 +94,7 @@ The TeamViewer window will now appear. Note the **green light** towards the bott
 
 Make a note of **your ID** and the four-digit temporary **password** (obscured), which the support staff will need in order to securely connect to your computer.
 
-![](img/teamviewer-mac-quicksupport.png)
+![](/img/teamviewer-mac-quicksupport.png)
 
 Once the support technician has this information, they can take temporary control of your computer. You will be able to see every action they perform. This typically includes seeing the mouse cursor moving, and seeing programs opening and closing. While the technician has control over the mouse and keyboard, you can still override their actions by using the mouse or the keyboard yourself. This is useful when replicating an issue for support staff to resolve, and when you need to enter a password.
 
@@ -104,7 +104,7 @@ Once the remote support session is over, TeamViewer will automatically return co
 
 Always close TeamViewer once your remote support session is finished. This ensures that no one can access your computer remotely unless TeamViewer is opened again.
 
-!!! note "Sponsored sessions"
+!!! info "Sponsored sessions"
     When the support session ends, you may see messages promoting the paid edition of TeamViewer. These often appear as a **sponsored session** message. TeamViewer shows these messages at random because we can provide remote support at no cost to you.
 
     If you see any promotional messages, you can **close** these windows and continue using your computer, with no further action required.
