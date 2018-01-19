@@ -11,7 +11,7 @@ This guide describes how to download and run TeamViewer in order to initiate a r
 Before you can download TeamViewer and join a remote support session, the first thing you will need to do is arrange a time for your session to take place. The best way to do this is often to talk to a technician you trust.
 
 !!! warning
-   **For your security, we will not initiate a remote support session without explicit permission.** If someone you do not trust contacts you offering remote support, you should decline. You should also decline if you are not requesting support. Allowing unsolicited remote support sessions risks the safety of your computer, of information, and of your identity.
+**For your security, we will not initiate a remote support session without explicit permission.** If someone you do not trust contacts you offering remote support, you should decline. You should also decline if you are not requesting support. Allowing unsolicited remote support sessions risks the safety of your computer, of information, and of your identity.
 
 ## Use TeamViewer on Windows
 
@@ -22,7 +22,7 @@ Prior to beginning your remote support session, you need to download and run Tea
 To download TeamViewer, [click here](http://go.nerdoncloud.com/teamviewer). You can also copy and paste this link into your web browser: [**http://go.nerdoncloud.com/teamviewer**](http://go.nerdoncloud.com/teamviewer).
 
 !!! info
-   The next two steps are for Google Chrome only. Different web browsers may ask you to either Save or Run the file. If asked, you should **Save** the file, and then move it to your **Desktop**.
+The next two steps are for Google Chrome only. Different web browsers may ask you to either Save or Run the file. If asked, you should **Save** the file, and then move it to your **Desktop**.
 
 After the download finishes, locate it in the bar at the bottom of the window. Click the **arrow** to the right of the file name, and then click **Show in folder**.
 
@@ -56,7 +56,7 @@ Once the remote support session is over, TeamViewer will automatically return co
 
 Always close TeamViewer once your remote support session is finished. This ensures that no one can access your computer remotely unless TeamViewer is opened again.
 
-!!! info "Sponsored sessions"
+??? info "Sponsored sessions"
     When the support session ends, you may see messages promoting the paid edition of TeamViewer. These often appear as a **sponsored session** message. TeamViewer shows these messages at random because we can provide remote support at no cost to you.
 
     If you see any promotional messages, you can **close** these windows and continue using your computer, with no further action required.
@@ -104,7 +104,7 @@ Once the remote support session is over, TeamViewer will automatically return co
 
 Always close TeamViewer once your remote support session is finished. This ensures that no one can access your computer remotely unless TeamViewer is opened again.
 
-!!! info "Sponsored sessions"
+??? info "Sponsored sessions"
     When the support session ends, you may see messages promoting the paid edition of TeamViewer. These often appear as a **sponsored session** message. TeamViewer shows these messages at random because we can provide remote support at no cost to you.
 
     If you see any promotional messages, you can **close** these windows and continue using your computer, with no further action required.
