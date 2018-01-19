@@ -15,7 +15,7 @@ copyright: 'Copyright &copy; 2018 Nerd On Cloud'
 # Configuration
 theme:
   name: 'material'
-  custom_url: '/mkdocs-material/material'
+  custom_url: 'mkdocs-material/material'
   language: 'en'
   palette:
     primary: 'blue'
