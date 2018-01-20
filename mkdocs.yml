@@ -24,6 +24,9 @@ theme:
     text: 'Roboto'
     code: 'Roboto Mono'
 
+extra_css:
+    - custom.css
+
 # Customization
 # (SOCIAL NETWORKS WOULD GO HERE)
 
@@ -51,7 +54,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-# Page Nav
+# Navigation
 pages:
 - 'Docs Home': 'index.md'
 - 'Use TeamViewer QuickSupport for remote assistance': 'teamviewer.md'

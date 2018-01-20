@@ -1,6 +1,8 @@
 # Use TeamViewer QuickSupport for remote assistance
 
-##### Applies to: TeamViewer 11, 12, 13 #####
+<h6>Applies to: TeamViewer 11, 12, 13</h6>
+
+--------
 
 TeamViewer QuickSupport (TeamViewer) is a free program used to provide remote support for computer problems over the Internet. As such, it can be a more convenient alternative to arranging an in-person visit for many computer issues.
 
@@ -63,7 +65,7 @@ Always close TeamViewer once your remote support session is finished. This ensur
     If you see any promotional messages, you can **close** these windows and continue using your computer, with no further action required.
 
 
-## Use TeamViewer for macOS (OS X)
+## Use TeamViewer on macOS (OS X)
 
 ### Download and run TeamViewer
 
@@ -71,7 +73,7 @@ Prior to beginning your remote support session, you need to download and run Tea
 
 To download TeamViewer, [click here](http://go.nerdoncloud.com/teamviewer). You can also copy and paste this link into your web browser: [**http://go.nerdoncloud.com/teamviewer**](http://go.nerdoncloud.com/teamviewer).
 
-Depending upon the operating system and browser you use, you may be prompted to either run the file or save it. In this example we are using OS X 10.11 El Capitan and Google Chrome. For other operating systems, the options may look slightly different; however, the basic procedure is the same on almost every Mac.
+Depending upon the operating system and browser you use, you may be prompted to run the file or to save it. This guide uses OS X 10.11 El Capitan and Google Chrome. For other operating systems, the options may look slightly different; however, the basic procedure is the same on almost every Mac.
 
 After the download finishes, locate it in the bar at the bottom of the window Click the **arrow** to the right of the file, and then click **Show in Finder**.
 
