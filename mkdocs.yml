@@ -6,8 +6,8 @@ site_url: 'https://docs.nerdoncloud.com/'
 
 # Repository
 # (SPECIFY FOR PUBLIC EDITABILITY)
-# repo_name: 'squidfunk/mkdocs-material'
-# repo_url: 'https://github.com/squidfunk/mkdocs-material'
+# repo_name: 'andrewjmetzger/mkdocs-noc'
+# repo_url: 'https://github.com/andrewjmetzger/mkdocs-noc/'
 
 # Copyright
 copyright: 'Copyright &copy; 2018 Nerd On Cloud'
