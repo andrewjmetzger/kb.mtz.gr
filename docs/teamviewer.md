@@ -13,7 +13,7 @@ This guide describes how to download and run TeamViewer in order to initiate a r
 Before you can download TeamViewer and join a remote support session, the first thing you will need to do is arrange a time for your session to take place. The best way to do this is often to talk to a technician you trust.
 
 !!! warning
-    **For your security, we will not initiate a remote support session without explicit permission.** If someone you do not trust contacts you offering remote support, you should decline. You should also decline if you are not requesting support. Allowing unsolicited remote support sessions risks the safety of your computer, of information, and of your identity.
+    **For your security, we will not initiate a remote support session without explicit permission.** If someone you do not trust contacts you offering remote support, you should decline. You should also decline if you are not requesting support. Allowing unsolicited remote support sessions risks the safety of your computer, of your information, and of your identity.
 
 ## Use TeamViewer on Windows
 
