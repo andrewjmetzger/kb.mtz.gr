@@ -65,7 +65,7 @@ Always close TeamViewer once your remote support session is finished. This ensur
     If you see any promotional messages, you can **close** these windows and continue using your computer, with no further action required.
 
 
-## Use TeamViewer on macOS (OS X)
+## Use TeamViewer on macOS (OS&nbsp;X)
 
 ### Download and run TeamViewer
 
