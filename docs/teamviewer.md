@@ -1,4 +1,4 @@
-# Use TeamViewer QuickSupport for remote assistance
+# Using TeamViewer QuickSupport for remote assistance
 
 <h6>Applies to: TeamViewer 11, 12, 13</h6>
 
@@ -21,7 +21,7 @@ Before you can download TeamViewer and join a remote support session, the first 
 
 Prior to beginning your remote support session, you need to download and run TeamViewer.
 
-To download TeamViewer, [click here](http://go.nerdoncloud.com/teamviewer). You can also copy and paste this link into your web browser: [**http://go.nerdoncloud.com/teamviewer**](http://go.nerdoncloud.com/teamviewer).
+To download TeamViewer, [click here](http://go.nerdoncloud.com/teamviewer). You can also copy and paste this link into your web browser: [**http://mtz.gr/teamviewer**](http://go.nerdoncloud.com/teamviewer).
 
 !!! info
     The next two steps are for Google Chrome only. Different web browsers may ask you to either Save or Run the file. If asked, you should **Save** the file, and then move it to your **Desktop**.
