@@ -1,16 +1,16 @@
 # Project information
-site_name: 'Documentation'
-site_description: 'Docs for NOC'
-site_author: 'Nerd On Cloud'
-site_url: 'https://docs.nerdoncloud.com/'
+site_name: 'Documentation - mtz.gr'
+site_description: 'Docs related to mtz.gr'
+site_author: 'mtz.gr'
+site_url: 'https://kb.mtz.gr/'
 
 # Repository
 # (SPECIFY FOR PUBLIC EDITABILITY)
 # repo_name: 'andrewjmetzger/mkdocs-noc'
-# repo_url: 'https://github.com/andrewjmetzger/mkdocs-noc/'
+# repo_url: 'https://github.com/andrewjmetzger/kb.mtz.gr/'
 
 # Copyright
-copyright: 'Copyright &copy; 2018 Nerd On Cloud'
+copyright: 'Copyright &copy; 2018'
 
 # Configuration
 theme:
@@ -18,8 +18,8 @@ theme:
   custom_url: 'mkdocs-material/material'
   language: 'en'
   palette:
-    primary: 'blue'
-    accent: 'blue'
+    primary: 'white'
+    accent: 'black'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
@@ -55,6 +55,6 @@ markdown_extensions:
   - pymdownx.tilde
 
 # Navigation
-pages:
-- 'Docs Home': 'index.md'
-- 'Use TeamViewer QuickSupport for remote assistance': 'teamviewer.md'
+# pages:
+#   - 'Docs Home': 'index.md'
+#   - 'Use TeamViewer QuickSupport for remote assistance': 'teamviewer.md'
