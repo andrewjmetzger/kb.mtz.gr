@@ -1,8 +1,8 @@
 # Getting Help and Remote Support
 
-!!!! warning "Warning"
-     Due to licensing issues, **Connectwise Control** is now used to provide most remote support. 
-     TeamViewer is no longer used. See "How to get help"
+!!! warning "Warning"
+    Due to licensing issues, **Connectwise Control** is now used to provide most remote support. 
+    TeamViewer is no longer used. See "How to get help"
      
 # What's changed?
 
