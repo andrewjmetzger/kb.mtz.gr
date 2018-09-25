@@ -2,7 +2,7 @@
 
 !!! warning "Warning"
     Due to licensing issues, **Connectwise Control** is now used to provide most remote support. 
-    TeamViewer is no longer used. See "How to get help"
+    TeamViewer is no longer used. See below for more info, or find your operating system to get started.
      
 # What's changed?
 
@@ -17,6 +17,8 @@ Getting help remotely with ConnectWise Control gives you more options than ever 
 
 ## I do *not* see a life preserver "SOS" icon
 
-#### I need help with a Windows PC
-
-#### I need help with a Mac
+  1. Check your email for a message with the subject **Support has invited you to join a remote support session**.
+  1. If you see the message, **open** it. 
+    *Note: If you do not see the message, look in your SPAMM or Junk folder.*
+  1. Click the large **Join Now** button. If you cannot click the button, copy and paste the unique URL under it into your browser's address bar instead.
+  1. Follow the instructions on-screen to join your session, or contact your technician for more information.
