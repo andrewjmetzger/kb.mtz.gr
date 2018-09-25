@@ -17,8 +17,6 @@ Getting help remotely with ConnectWise Control gives you more options than ever 
 
 ## I do *not* see a life preserver "SOS" icon
 
-### Windows
+#### I need help with a Windows PC
 
-### Mac 
-
-### Linux
+#### I need help with a Mac
