@@ -6,7 +6,7 @@ site_url: 'https://kb.mtz.gr/'
 
 # Repository
 # (SPECIFY FOR PUBLIC EDITABILITY)
-# repo_name: 'andrewjmetzger/mkdocs-noc'
+# repo_name: 'andrewjmetzger/kb.mtz.gr'
 # repo_url: 'https://github.com/andrewjmetzger/kb.mtz.gr/'
 
 # Copyright
@@ -15,7 +15,7 @@ copyright: 'Copyright &copy; 2018'
 # Configuration
 theme:
   name: 'material'
-  custom_url: 'mkdocs-material/material'
+  custom_dir: 'mkdocs-material/material'
   language: 'en'
   palette:
     primary: 'white'
@@ -23,12 +23,6 @@ theme:
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
-
-extra_css:
-    - custom.css
-
-# Customization
-# (SOCIAL NETWORKS WOULD GO HERE)
 
 # Extensions
 markdown_extensions:
@@ -53,8 +47,3 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-
-# Navigation
-# pages:
-#   - 'Docs Home': 'index.md'
-#   - 'Use TeamViewer QuickSupport for remote assistance': 'teamviewer.md'

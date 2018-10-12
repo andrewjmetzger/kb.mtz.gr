@@ -18,11 +18,12 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-language: node_js
+language: python
 sudo: false
 
-# Node.js version and necessary services
-node_js: 8
+# Python, Node.js version and necessary services
+python: "3.6"
+node_js: "8"
 services:
   - docker
 
@@ -33,19 +34,18 @@ git:
 # Cache dependencies
 cache:
   pip: true
-  yarn: true
   directories:
     - node_modules
 
 # Install dependencies
 install:
-  - yarn install
-  - pip install --user -r requirements.txt
+  - npm install
+  - pip install -r requirements.txt
 
 # Perform build and release
 script:
-  - yarn run lint
-  - yarn run build
+  - npm run lint
+  - npm run build
 
 # Deploy artifacts
 after_success:

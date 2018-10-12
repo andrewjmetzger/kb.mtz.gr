@@ -21,6 +21,7 @@
  */
 
 const fs = require("fs")
+const cssmin = require("cssmin")
 const path = require("path")
 const html = require("html-minifier")
 const uglify = require("uglify-js")
@@ -40,7 +41,7 @@ const ManifestPlugin = require("webpack-manifest-plugin")
  * Configuration
  * ------------------------------------------------------------------------- */
 
-module.exports = env => {
+module.exports = env => { // eslint-disable-line complexity
   const config = {
 
     /* Entrypoints */
@@ -122,6 +123,20 @@ module.exports = env => {
           }
         },
 
+        /* Copy web font files */
+        {
+          context: "src",
+          from: "assets/fonts/**/*",
+          ignore: "**/*.css"
+        },
+
+        /* Copy and minify web font stylesheets */
+        {
+          context: "src",
+          from: "assets/fonts/*.css",
+          transform: content => cssmin(content.toString())
+        },
+
         /* Copy images without cache busting */
         {
           context: "src",
@@ -156,6 +171,20 @@ module.exports = env => {
               /* Write theme version into template */
               .replace("$md-name$", metadata.name)
               .replace("$md-version$", metadata.version)
+
+              /* Write available search languages into template */
+              .replace("$md-lunr-languages$",
+                fs.readdirSync(
+                  path.resolve(__dirname, "node_modules/lunr-languages")
+                ).reduce((files, file) => {
+                  const matches = file.match(/lunr.(\w{2}).js$/)
+                  if (matches) {
+                    const [, language] = matches
+                    files.push(`"${language}"`)
+                  }
+                  return files
+                }, [])
+                  .join(", "))
           }
         }
       ]),
@@ -267,11 +296,17 @@ module.exports = env => {
       /* Minify images */
       new ImageminPlugin({
         test: /\.(ico|png|svg)$/i,
-        svgo: {
-          plugins: [
-            { cleanupIDs: false }
-          ]
-        }
+        svgo: null
+        // Hack: Temporarily disabled, as SVGO removes the viewbox property
+        // and setting the plugin to false doesn't have any effect.
+        // {
+        //   plugins: [
+        //     {
+        //       cleanupIDs: false,
+        //       removeViewBox: false
+        //     }
+        //   ]
+        // }
       }),
 
       /* Write manifest */

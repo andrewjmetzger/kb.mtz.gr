@@ -10,7 +10,7 @@ executed during compilation of the Markdown file.
     further directions on how to set up Pygments or use the official
     [Docker image][3] with all dependencies pre-installed.
 
-  [1]: https://pythonhosted.org/Markdown/extensions/code_hilite.html
+  [1]: https://python-markdown.github.io/extensions/code_hilite/
   [2]: http://pygments.org
   [3]: https://hub.docker.com/r/squidfunk/mkdocs-material/
 
@@ -31,14 +31,6 @@ To enable CodeHilite, add the following lines to your `mkdocs.yml`:
 markdown_extensions:
   - codehilite
 ```
-
-!!! warning "Migrating from Material 0.2.x"
-
-    In 0.2.x the CodeHilite extension was included with
-    `codehilite(css_class=code)` which switched the CSS class from
-    `.codehilite` to `.code`. The current version of the theme doesn't require
-    that and defines styles for the default `.codehilite` class, so the part
-    `css_class=code` needs to be removed.
 
   [4]: http://pygments.org/languages
 
@@ -115,8 +107,8 @@ Line numbers can be added by enabling the `linenums` flag in your `mkdocs.yml`:
 
 ``` yaml
 markdown_extensions:
-  - codehilite: 
-      linenums:true
+  - codehilite:
+      linenums: true
 ```
 
 Example:
@@ -141,6 +133,87 @@ Result:
             for j in range(len(items) - 1 - i):
                 if items[j] > items[j + 1]:
                     items[j], items[j + 1] = items[j + 1], items[j]
+
+### Grouping code blocks
+
+The [SuperFences][5] extension which is part of the [PyMdown Extensions][6]
+package adds support for grouping code blocks with tabs. This is especially
+useful for documenting projects with multiple language bindings.
+
+Example:
+
+````
+``` bash tab="Bash"
+#!/bin/bash
+
+echo "Hello world!"
+```
+
+``` c tab="C"
+#include <stdio.h>
+
+int main(void) {
+  printf("Hello world!\n");
+}
+```
+
+``` c++ tab="C++"
+#include <iostream>
+
+int main() {
+  std::cout << "Hello world!" << std::endl;
+  return 0;
+}
+```
+
+``` c# tab="C#"
+using System;
+
+class Program {
+  static void Main(string[] args) {
+    Console.WriteLine("Hello world!");
+  }
+}
+```
+````
+
+Result:
+
+``` bash tab="Bash"
+#!/bin/bash
+
+echo "Hello world!"
+```
+
+``` c tab="C"
+#include <stdio.h>
+
+int main(void) {
+  printf("Hello world!\n");
+}
+```
+
+``` c++ tab="C++"
+#include <iostream>
+
+int main() {
+  std::cout << "Hello world!" << std::endl;
+  return 0;
+}
+```
+
+``` c# tab="C#"
+using System;
+
+class Program {
+  static void Main(string[] args) {
+    Console.WriteLine("Hello world!");
+  }
+}
+```
+
+  [5]: https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
+  [6]: https://facelessuser.github.io/pymdown-extensions
 
 ### Highlighting specific lines
 
@@ -169,7 +242,6 @@ Result:
             for j in range(len(items) - 1 - i):
                 if items[j] > items[j + 1]:
                     items[j], items[j + 1] = items[j + 1], items[j]
-
 
 ## Supported languages <small>excerpt</small>
 

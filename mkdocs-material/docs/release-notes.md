@@ -2,18 +2,29 @@
 
 ## Upgrading
 
-To upgrade Material to the latest version, use pip:
+To upgrade Material to the latest version, use `pip`:
 
 ``` sh
 pip install --upgrade mkdocs-material
 ```
 
-To determine the currently installed version, use the following command:
+To inspect the currently installed version, use the following command:
 
 ``` sh
-pip show mkdocs-material | grep -E ^Version
-# Version 2.5.0
+pip show mkdocs-material
 ```
+
+### Material 2.x to 3.x
+
+* Material for MkDocs 3.x requires MkDocs 1.0 because the way paths are resolved
+  internally changed significantly. Furthermore, `pages` was renamed to `nav`,
+  so remember to adjust your `mkdocs.yml` file.
+
+* All extended templates *should* continue to work but in order to make them
+  future-proof the `url` filter should be introduced on all paths. Please see
+  the [official release notes][_1] for further guidance.
+
+  [_1]: https://www.mkdocs.org/about/release-notes/#version-10-2018-08-03
 
 ### Material 1.x to 2.x
 
@@ -37,6 +48,176 @@ pip show mkdocs-material | grep -E ^Version
 * The search tokenizer can now be set through `extra.search.tokenizer`.
 
 ## Changelog
+
+### 3.0.4 <small>_ September 3, 2018</small>
+
+* Updated Dutch translations
+* Fixed [#856][856]: Removef preconnect meta tag if Google Fonts are disabled
+
+  [856]: https://github.com/squidfunk/mkdocs-material/issues/856
+
+### 3.0.3 <small>_ August 7, 2018</small>
+
+* Fixed [#841][841]: Additional path levels for extra CSS and JS
+
+  [841]: https://github.com/squidfunk/mkdocs-material/issues/841
+
+### 3.0.2 <small>_ August 6, 2018</small>
+
+* Fixed [#839][839]: Lunr.js stemmer imports incorrect
+
+  [839]: https://github.com/squidfunk/mkdocs-material/issues/839
+
+### 3.0.1 <small>_ August 5, 2018</small>
+
+* Fixed [#838][838]: Search result links incorrect
+
+  [838]: https://github.com/squidfunk/mkdocs-material/issues/838
+
+### 3.0.0 <small>_ August 5, 2018</small>
+
+* Upgraded MkDocs to 1.0
+* Upgraded Python in official Docker image to 3.6
+* Added Serbian and Serbo-Croatian translations
+
+### 2.9.4 <small>_ July 29, 2018</small>
+
+* Fixed build error after MkDocs upgrade
+
+### 2.9.3 <small>_ July 29, 2018</small>
+
+* Added link to home for logo in drawer
+* Fixed dependency problems between MkDocs and Tornado
+
+### 2.9.2 <small>_ June 29, 2018</small>
+
+* Added Hindi and Czech translations
+
+### 2.9.1 <small>_ June 18, 2018</small>
+
+* Added support for different spellings for theme color
+* Fixed [#799][799]: Added support for web font minification in production
+* Fixed [#800][800]: Added `.highlighttable` as an alias for `.codehilitetable`
+
+  [799]: https://github.com/squidfunk/mkdocs-material/issues/799
+  [800]: https://github.com/squidfunk/mkdocs-material/issues/800
+
+### 2.9.0 <small>_ June 13, 2018</small>
+
+* Added support for theme color on Android
+* Fixed [#796][796]: Rendering of nested tabbed code blocks
+
+  [796]: https://github.com/squidfunk/mkdocs-material/issues/796
+
+### 2.8.0 <small>_ June 10, 2018</small>
+
+* Added support for grouping code blocks with tabs
+* Added Material and FontAwesome icon fonts to distribution files (GDPR)
+* Added note on compliance with GDPR
+* Added Slovak translations
+* Fixed [#790][790]: Prefixed `id` attributes with `__` to avoid name clashes
+
+  [790]: https://github.com/squidfunk/mkdocs-material/issues/790
+
+### 2.7.3 <small>_ April 26, 2018</small>
+
+* Added Finnish translations
+
+### 2.7.2 <small>_ April 9, 2018</small>
+
+* Fixed rendering issue for `details` on Edge
+
+### 2.7.1 <small>_ March 21, 2018</small>
+
+* Added Galician translations
+* Fixed [#730][730]: Scroll chasing error on home page if Disqus is enabled
+* Fixed [#736][736]: Reset drawer and search upon back button invocation
+
+  [730]: https://github.com/squidfunk/mkdocs-material/issues/730
+  [736]: https://github.com/squidfunk/mkdocs-material/issues/736
+
+### 2.7.0 <small>_ March 6, 2018</small>
+
+* Added ability to set absolute URL for logo
+* Added Hebrew translations
+
+### 2.6.6 <small>_ February 22, 2018</small>
+
+* Added preconnect for Google Fonts for faster loading
+* Fixed [#710][710]: With tabs sidebar disappears if JavaScript is not available
+
+  [710]: https://github.com/squidfunk/mkdocs-material/issues/710
+
+### 2.6.5 <small>_ February 22, 2018</small>
+
+* Reverted `--dev-addr` flag removal from `Dockerfile`
+
+### 2.6.4 <small>_ February 21, 2018</small>
+
+* Added Catalan translations
+* Fixed incorrect margins for buttons in Firefox and Safari
+* Replaced package manager `yarn` with `npm 5.6`
+* Reverted GitHub stars rounding method
+* Removed `--dev-addr` flag from `Dockerfile` for Windows compatibility
+
+### 2.6.3 <small>_ February 18, 2018</small>
+
+* Added Vietnamese translations
+
+### 2.6.2 <small>_ February 12, 2018</small>
+
+* Added Arabic translations
+* Fixed incorrect rounding of amount of GitHub stars
+* Fixed double-layered borders for tables
+
+### 2.6.1 <small>_ February 11, 2018</small>
+
+* Added ability to override Disqus integration using metadata
+* Fixed [#690][690]: Duplicate slashes in source file URLs
+* Fixed [#696][696]: Active page highlight not working with default palette
+* Adjusted German translations
+
+  [690]: https://github.com/squidfunk/mkdocs-material/issues/690
+  [696]: https://github.com/squidfunk/mkdocs-material/issues/696
+
+### 2.6.0 <small>_ February 2, 2018</small>
+
+* Moved default search configuration to default translation (English)
+* Added support to automatically set text direction from translation
+* Added support to disable search stop word filter in translation
+* Added support to disable search trimmer in translation
+* Added Persian translations
+* Fixed support for Polish search
+* Fixed disappearing GitHub, GitLab and Bitbucket repository icons
+
+### 2.5.5 <small>_ January 31, 2018</small>
+
+* Added Hungarian translations
+
+### 2.5.4 <small>_ January 29, 2018</small>
+
+* Fixed [#683][683]: `gh-deploy` fails inside Docker
+
+  [683]: https://github.com/squidfunk/mkdocs-material/issues/683
+
+### 2.5.3 <small>_ January 25, 2018</small>
+
+* Added Ukrainian translations
+
+### 2.5.2 <small>_ January 22, 2018</small>
+
+* Added default search language mappings for all localizations
+* Fixed [#673][673]: Error loading non-existent search language
+* Fixed [#675][675]: Uncaught reference error when search plugin disabled
+
+  [673]: https://github.com/squidfunk/mkdocs-material/issues/673
+  [675]: https://github.com/squidfunk/mkdocs-material/issues/675
+
+### 2.5.1 <small>_ January 20, 2018</small>
+
+* Fixed permalink for main headline
+* Improved missing translation handling with English as a fallback
+* Improved accessibility with skip-to-content link
 
 ### 2.5.0 <small>_ January 13, 2018</small>
 

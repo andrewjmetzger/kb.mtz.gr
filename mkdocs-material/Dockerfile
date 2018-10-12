@@ -18,7 +18,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-FROM jfloff/alpine-python:2.7-slim
+FROM jfloff/alpine-python:3.6-slim
 MAINTAINER Martin Donath <martin.donath@squidfunk.com>
 
 # Set build directory
@@ -33,9 +33,12 @@ COPY setup.py setup.py
 
 # Perform build and cleanup artifacts
 RUN \
-  apk add --no-cache openssh git && \
-  python setup.py install 2>/dev/null && \
-  rm -rf /tmp/*
+  apk add --no-cache \
+    git \
+    git-fast-import \
+    openssh \
+  && python setup.py install 2>/dev/null \
+  && rm -rf /tmp/*
 
 # Set working directory
 WORKDIR /docs

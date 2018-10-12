@@ -24,7 +24,7 @@ pip install mkdocs && mkdocs --version
 
 Material requires MkDocs >= 0.17.1.
 
-  [1]: http://www.mkdocs.org
+  [1]: https://www.mkdocs.org
 
 ### Installing Material
 
@@ -297,16 +297,85 @@ theme:
 
 ### Language
 
+!!! info "Call for Contributions: Add languages/translations to Material"
+
+    Help translate Material into more languages - it's just **one click** and
+    takes approximately **2 minutes**: [click here](http://bit.ly/2EbzFc8)
+
 #### Localization
 
 > Default: `en`
 
 Material for MkDocs supports internationalization (i18n) and provides
-translations for all template variables and labels in English `en`, French `fr`,
-German `de`, Spanish `es`, Italian `it`, Danish `da`, Portugese `pt`,
-Polish `pl`, Norwegian `no`, Dutch `nl`, Swedish `sv`, Korean `kr`,
-Russian `ru`, Japanese `ja`, Chinese (Simplified) `zh` and Chinese (Traditional)
-`zh-Hant`. Specify the language with:
+translations for all template variables and labels in the following languages:
+
+<table style="white-space: nowrap;">
+  <thead>
+    <tr>
+      <th colspan="4">Available languages</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>ar</code> / Arabic</td>
+      <td><code>ca</code> / Catalan</td>
+      <td><code>cs</code> / Czech</td>
+      <td><code>da</code> / Danish</td>
+    </tr>
+    <tr>
+      <td><code>nl</code> / Dutch</td>
+      <td><code>en</code> / English</td>
+      <td><code>fi</code> / Finnish</td>
+      <td><code>fr</code> / French</td>
+    </tr>
+    <tr>
+      <td><code>gl</code> / Galician</td>
+      <td><code>de</code> / German</td>
+      <td><code>he</code> / Hebrew</td>
+      <td><code>hi</code> / Hindi</td>
+    </tr>
+    <tr>
+      <td><code>hu</code> / Hungarian</td>
+      <td><code>it</code> / Italian</td>
+      <td><code>ja</code> / Japanese</td>
+      <td><code>kr</code> / Korean</td>
+    </tr>
+    <tr>
+      <td><code>no</code> / Norwegian</td>
+      <td><code>fa</code> / Persian</td>
+      <td><code>pl</code> / Polish</td>
+      <td><code>pt</code> / Portugese</td>
+    </tr>
+    <tr>
+      <td><code>ru</code> / Russian</td>
+      <td><code>sr</code> / Serbian</td>
+      <td><code>sh</code> / Serbo-Croatian</td>
+      <td><code>sk</code> / Slovak</td>
+    </tr>
+    <tr>
+      <td><code>es</code> / Spanish</td>
+      <td><code>sv</code> / Swedish</td>
+      <td><code>tr</code> / Turkish</td>
+      <td><code>uk</code> / Ukrainian</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <code>zh</code> / Chinese (Simplified)
+      </td>
+      <td colspan="2">
+        <code>zh-Hant</code> / Chinese (Traditional)
+      </td>
+    </tr>
+    <tr>
+      <td><code>vi</code> / Vietnamese</td>
+      <td colspan="3" align="right">
+        <a href="http://bit.ly/2EbzFc8">Submit a new language</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+Specify the language with:
 
 ``` yaml
 theme:
@@ -322,14 +391,11 @@ all translations:
 cp partials/language/en.html partials/language/jp.html
 ```
 
-Feel free to contribute your localization to Material for MkDocs by opening a
-Pull Request.
-
   [16]: https://www.w3schools.com/tags/ref_language_codes.asp
 
 #### Text direction
 
-> Default: `ltr`
+> Default: best match for given theme language, automatically set
 
 Material supports both, left-to-right (`ltr`) and right-to-left (`rtl`) text
 direction. This enables more languages like Arabic, Hebrew, Syriac and others
@@ -342,13 +408,14 @@ theme:
 
 #### Site search
 
-> Default: `en`
+> Default: best match for given theme language, automatically set
 
 Site search is implemented using [lunr.js][17], which includes stemmers for the
 English language by default, while stemmers for other languages are included
-with [lunr-languages][18], both of which are integrated with this theme. Support
-for other languages and even multilingual search can be activated in your
-project's `mkdocs.yml`:
+with [lunr-languages][18], both of which are integrated with this theme.
+Material selects the matching (or best-matching) stemmer for the given theme
+language. Multilingual search can be activated in your project's `mkdocs.yml`
+by explicitly defining the search language(s):
 
 ``` yaml
 extra:
@@ -356,19 +423,49 @@ extra:
     language: 'en, de, ru'
 ```
 
-All defined languages are used only for stemming. This will automatically load
-the stemmers for the specified languages and set them up with site search.
+At the time of writing, the following languages are supported:
 
-At the time of writing, the following languages are supported: English `en`,
-French `fr`, German `de`, Spanish `es`, Italian `it`, Dutch `du`, Danish `da`,
-Portguese `pt`, Finnish `fi`, Romanian `ro`, Hungarian `hu`, Russian `ru`,
-Norwegian `no`, Swedish `sv`, Japanese `jp` and Turkish `tr`.
+<table style="white-space: nowrap;">
+  <thead>
+    <tr>
+      <th colspan="4">Available language stemmers</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>da</code> / Danish</td>
+      <td><code>du</code> / Dutch</td>
+      <td><code>en</code> / English</td>
+      <td><code>fi</code> / Finnish</td>
+    </tr>
+    <tr>
+      <td><code>fr</code> / French</td>
+      <td><code>de</code> / German</td>
+      <td><code>hu</code> / Hungarian</td>
+      <td><code>it</code> / Italian</td>
+    </tr>
+    <tr>
+      <td><code>jp</code> / Japanese</td>
+      <td><code>no</code> / Norwegian</td>
+      <td><code>pt</code> / Portugese</td>
+      <td><code>ro</code> / Romanian</td>
+    </tr>
+    <tr>
+      <td><code>ru</code> / Russian</td>
+      <td><code>es</code> / Spanish</td>
+      <td><code>sv</code> / Swedish</td>
+      <td><code>tr</code> / Turkish</td>
+    </tr>
+  </tbody>
+</table>
 
-!!! info "Search language support for Chinese"
+!!! warning "MkDocs 1.0 compatibility"
 
-    [lunr-languages][18] currently doesn't include a stemmer for Chinese or
-    other Asian languages, but some users reported the Japanese stemmer to
-    work quite well for those cases.
+    While MkDocs 1.0 supports prebuilding the search index, Material currently
+    doesn't support this setting as the default search behavior of the original
+    theme was heavily modified for the sake of a better UX. Integration is
+    possible, but a small subset of the features Material provides will not be
+    portable to the prebuilt index mainly due to missing localization.
 
 !!! warning "Only specify the languages you really need"
 
@@ -448,7 +545,7 @@ set explicitly by setting `extra.repo_icon` to `github`, `gitlab` or
     guidance regarding the `edit_uri` attribute, which defines whether the edit
     button is shown or not.
 
-  [19]: http://www.mkdocs.org/user-guide/configuration/#edit_uri
+  [19]: https://www.mkdocs.org/user-guide/configuration/#edit_uri
 
 ### Adding social links
 
@@ -504,7 +601,7 @@ in your `mkdocs.yml`:
 
 ``` yaml
 extra:
-  disqus: 'mkdocs-material'
+  disqus: 'your-shortname'
 ```
 
 The comments section is inserted on *every page, except the index page*.
@@ -517,11 +614,14 @@ automatically included.
     `site_url` value must be set in `mkdocs.yml` for the Disqus integration to
     load properly.
 
+Disqus can also be enabled or disabled for specific pages using [Metadata][23].
+
   [22]: https://disqus.com
+  [23]: extensions/metadata.md#disqus
 
 ## Extensions
 
-MkDocs supports several [Markdown extensions][23]. The following extensions
+MkDocs supports several [Markdown extensions][24]. The following extensions
 are not enabled by default (see the link for which are enabled by default)
 but highly recommended, so they should be switched on at all times:
 
@@ -537,20 +637,20 @@ markdown_extensions:
 For more information, see the following list of extensions supported by the
 Material theme including more information regarding installation and usage:
 
-* [Admonition][24]
-* [Codehilite][25]
-* [Footnotes][26]
-* [Metadata][27]
-* [Permalinks][28]
-* [PyMdown Extensions][29]
+* [Admonition][25]
+* [Codehilite][26]
+* [Footnotes][27]
+* [Metadata][28]
+* [Permalinks][29]
+* [PyMdown Extensions][30]
 
-  [23]: http://www.mkdocs.org/user-guide/writing-your-docs/#markdown-extensions
-  [24]: extensions/admonition.md
-  [25]: extensions/codehilite.md
-  [26]: extensions/footnotes.md
-  [27]: extensions/metadata.md
-  [28]: extensions/permalinks.md
-  [29]: extensions/pymdown.md
+  [24]: https://www.mkdocs.org/user-guide/writing-your-docs/#markdown-extensions
+  [25]: extensions/admonition.md
+  [26]: extensions/codehilite.md
+  [27]: extensions/footnotes.md
+  [28]: extensions/metadata.md
+  [29]: extensions/permalinks.md
+  [30]: extensions/pymdown.md
 
 ## Full example
 

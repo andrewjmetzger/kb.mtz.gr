@@ -13,7 +13,7 @@ necessary to preserve the desired style.
 few tweaks to an existing theme, you can just add your stylesheets and
 JavaScript files to the `docs` directory.
 
-  [1]: http://www.mkdocs.org
+  [1]: https://www.mkdocs.org
 
 ### Additional stylesheets
 
@@ -57,7 +57,7 @@ extra_javascript:
 
 Further assistance can be found in the [MkDocs documentation][2].
 
-  [2]: http://www.mkdocs.org/user-guide/styling-your-docs/#customizing-a-theme
+  [2]: https://www.mkdocs.org/user-guide/styling-your-docs/#customizing-a-theme
 
 ## Extending the theme
 
@@ -66,7 +66,7 @@ extend the theme. From version 0.16 on MkDocs implements [theme extension][3],
 an easy way to override parts of a theme without forking and changing the
 main theme.
 
-  [3]: http://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme_dir
+  [3]: https://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme-custom_dir
 
 ### Setup and theme structure
 
@@ -99,10 +99,11 @@ The directory layout of the Material theme is as follows:
 │  ├─ javascripts/                     # JavaScript
 │  └─ stylesheets/                     # Stylesheets
 ├─ partials/
+│  ├─ integrations/                    # 3rd-party integrations
 │  ├─ language/                        # Localized languages
-│  ├─ disqus.html                      # Disqus integration
 │  ├─ footer.html                      # Footer bar
 │  ├─ header.html                      # Header bar
+│  ├─ hero.html                        # Hero teaser
 │  ├─ language.html                    # Localized labels
 │  ├─ nav-item.html                    # Main navigation item
 │  ├─ nav.html                         # Main navigation
@@ -166,7 +167,7 @@ The Material theme provides the following template blocks:
 
 For more on this topic refer to the [MkDocs documentation][4]
 
-  [4]: http://www.mkdocs.org/user-guide/styling-your-docs/#overriding-template-blocks
+  [4]: https://www.mkdocs.org/user-guide/styling-your-docs/#overriding-template-blocks
 
 ## Theme development
 
@@ -182,8 +183,7 @@ the Material theme and recompile it. This is fairly easy.
 ### Environment setup
 
 In order to start development on the Material theme, a [Node.js][8] version of
-at least 8 is required, as well as the package manager [yarn][9] which is a
-better version of `npm`. First, clone the repository:
+at least 8 is required. First, clone the repository:
 
 ``` sh
 git clone https://github.com/squidfunk/mkdocs-material
@@ -194,23 +194,22 @@ Next, all dependencies need to be installed, which is done with:
 ``` sh
 cd mkdocs-material
 pip install -r requirements.txt
-yarn install
+npm install
 ```
 
   [8]: https://nodejs.org
-  [9]: https://yarnpkg.com/
 
 ### Development mode
 
 The development server can be started with:
 
 ``` sh
-yarn run watch
+npm run watch
 ```
 
 This will also start the MkDocs development server which will monitor changes
 on assets, templates and documentation. Point your browser to
-[localhost:8000][10] and you should see this documentation in front of you.
+[localhost:8000][9] and you should see this documentation in front of you.
 
 For example, changing the color palette is as simple as changing the
 `$md-color-primary` and `$md-color-accent` variables in
@@ -227,14 +226,14 @@ $md-color-accent:  $clr-teal-a700;
     directory are automatically generated from the `src` directory and will be
     overriden when the theme is built.
 
-  [10]: http://localhost:8000
+  [9]: http://localhost:8000
 
 ### Build process
 
 When you've finished making your changes, you can build the theme by invoking:
 
 ``` sh
-yarn run build
+npm run build
 ```
 
 This triggers the production-level compilation and minification of all
