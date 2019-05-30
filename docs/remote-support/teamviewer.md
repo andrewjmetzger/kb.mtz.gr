@@ -1,6 +1,6 @@
 # Using TeamViewer QuickSupport for remote assistance
 
-<h6>Applies to: TeamViewer 11, 12, 13</h6>
+<h6>Applies to: TeamViewer, version 11 and greater</h6>
 
 --------
 
