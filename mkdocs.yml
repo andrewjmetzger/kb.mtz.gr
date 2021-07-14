@@ -10,12 +10,12 @@ site_url: 'https://kb.mtz.gr/'
 # repo_url: 'https://github.com/andrewjmetzger/kb.mtz.gr/'
 
 # Copyright
-copyright: 'Copyright &copy; 2018'
+copyright: 'Copyright &copy; 2018, 2021'
 
 # Configuration
 theme:
   name: 'material'
-  custom_dir: 'mkdocs-material/material'
+  theme_dir: 'mkdocs-material/material'
   language: 'en'
   palette:
     primary: 'white'
